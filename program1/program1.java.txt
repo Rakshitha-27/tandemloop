@@ -1,0 +1,77 @@
+
+package cal;
+
+import java.util.Scanner;
+
+ class calculator
+        {
+     int result;
+     public int add(int n1,int n2)
+     {
+         result=n1+n2;
+         return result;         
+     } 
+     public int sub(int n1,int n2)
+     {
+         result=n1-n2;
+         return result;         
+     }   
+     public int mul(int n1,int n2)
+     {
+         result=n1*n2;
+         return result;         
+     }   
+     public int div(int n1,int n2)
+     {
+         result=n1/n2;
+         return result;         
+     }   
+}
+
+public class Cal {
+
+    
+    public static void main(String[] args) {
+       System.out.println("enter num");
+       Scanner sc=new Scanner(System.in);
+        int n1=sc.nextInt();
+        int n2=sc.nextInt();
+        Double n3=Double.valueOf(n2);
+        System.out.println("enter operators(+,-,*,/):");
+        int op=sc.nextInt();
+       Cal c=new Cal(); 
+       calculator c1=new calculator();
+       if(op==1)
+               
+       {
+           int ar=c1.add(n1,n2);
+           String str1=Integer.toString(ar);
+           System.out.println(str1);
+           //System.out.println(c1.add(n1,n2));
+       }
+       if(op==2)
+       {
+           int ar=c1.sub(n1,n2);
+           String str1=Integer.toString(ar);
+           System.out.println(str1);
+              //System.out.println(c1.add(n1,n2));
+       }
+       if(op==3)
+       {
+           int ar=c1.mul(n1,n2);
+           String str1=Integer.toString(ar);
+           System.out.println(str1);
+              //System.out.println(c1.add(n1,n2));
+       }
+       if(op==4)
+       {
+           int ar=c1.div(n1,n2);
+           String str1=Integer.toString(ar);
+           System.out.println(str1);
+              //System.out.println(c1.add(n1,n2));
+       }
+       
+    }
+
+   
+}
